@@ -41,7 +41,7 @@ class Knapsack {
             items.pop_back();
         }
 
-        int get_max_weight() {
+        int get_max_weight() noexcept {
             return max_weight;
         }
 
@@ -52,22 +52,22 @@ class Knapsack {
             return items[index];
         }
 
-        int get_sum_weights() {
+        int get_sum_weights() noexcept {
             return sum_weights;
         }
 
-        int get_num_items() {
+        int get_num_items() noexcept {
             return items.size();
         }
 
-        void print_items() {
+        void print_items() noexcept {
             for (int i = 0; i < items.size(); i++) {
                 cout << items[i] << " ";
             }
             cout << endl;
         }
 
-        ~Knapsack() {
+        ~Knapsack() noexcept {
             cout << "Destructor called" << endl;
         }
 };
